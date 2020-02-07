@@ -20,7 +20,7 @@ class Transfer
     end
 
     def execute_transaction
-      binding.pry
+    
       if sender.status == "open"
           if  sender.balance > @amount && @status =="pending"
             sender.balance = sender.balance - @amount
